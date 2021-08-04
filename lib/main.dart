@@ -7,7 +7,8 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
-          title: Text('Dicee'),
+          centerTitle: true,
+          title: Text('Click The Dice To Roll!'),
           backgroundColor: Colors.red,
         ),
         body: DicePage(),
@@ -40,6 +41,7 @@ class _DicePageState extends State<DicePage> {
         children: <Widget>[
           Expanded(
             child: Container(
+              margin: EdgeInsets.only(left: 20.0, right: 10.0),
               width: double.infinity,
               height: double.infinity,
               child: TextButton(
@@ -52,6 +54,7 @@ class _DicePageState extends State<DicePage> {
           ),
           Expanded(
             child: Container(
+              margin: EdgeInsets.only(right: 20.0, left: 10.0),
               width: double.infinity,
               height: double.infinity,
               child: TextButton(
